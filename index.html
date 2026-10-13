@@ -1,9 +1,277 @@
-<html>
-    <head>
-        <title>William Bardon Jr.</title>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Bardon, Jr.</title>
+    <meta name="description" content="Research page of William Bardon, Jr.">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="robots" content="all">
+    <meta content="en_EN" property="og:locale">
+    <meta content="website" property="og:type">
+    <meta content="https://shikun.io/projects/clarity" property="og:url">
+    <meta content="William Bardon, Jr." property="og:title">
+    <meta content="Personal research page" property="og:description">
 
-    </head>
-    <body>
-        <h1>Test</h1>
-    </body>
-</html>
+    <!--
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@your_twitter_id">
+    <meta name="twitter:description" content="Clarity: A Minimalist Website Template for AI Research">
+    <meta name="twitter:image:src" content="assets/figures/clarity.png">
+    -->
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main_free.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="clarity/clarity.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
+    <link href="assets/fontawesome-free-7.2.0-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+
+    <!-- Comment to remove table of content. -->
+    <script src="assets/scripts/navbar.js"></script>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            "HTML-CSS": {
+              scale: 95,
+              fonts: ["Gyre-Pagella"],
+              imageFont: null,
+              undefinedFamily: "'Arial Unicode MS', cmbright"
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+              }
+          });
+    </script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Title Page -->
+    <!-- Dark Theme Example: Change the background colour dark and change the following div "blog-title" into "blog-title white". -->
+    <div class="container blog" id="first-content" style="background-color: #E0E4E6;">
+        <!-- If you don't have a project cover: Change "blog-title" into "blog-title no-cover"  -->
+        <div class="blog-title">
+            <div class="blog-intro">
+                <div>
+                    <h1 class="title">William Bardon, Jr.</h1>
+                    <!--
+                    <p class="author">
+                        William Bardon, Jr. <sup>1</sup> , John Doe <sup>2</sup>, John Doe, John Doe, and John Doe
+                    </p>
+                    <p class="author" style="padding-top: 0px;">
+                        <sup>1</sup> University of Maryland, Baltimore County
+                        <br>
+                        <sup>2</sup> Imperial College London
+                    </p>
+                    -->
+                    <p class="abstract">
+                        I am a PhD student in the Department of Computer Science and Electrical Engineering at the University of Maryland, Baltimore County (UMBC).
+                    </p>
+                    <!-- Using FontAwesome Pro -->
+                    <!-- <div class="info">
+                        <div>
+                            <a href="https://arxiv.org" class="button icon" style="background-color: rgba(255, 255, 255, 0.3)"> Paper <i class="far fa-book-open"></i></a> &nbsp;&nbsp;
+                            <a href="https://github.com" class="button icon" style="background-color: rgba(255, 255, 255, 0.3)">Code <i class="far fa-code"></i></a>  &nbsp;&nbsp;
+                            <a href="https://www.microsoft.com/en-gb/microsoft-365/powerpoint" class="button icon" style="background-color: rgba(255, 255, 255, 0.3);">Slides <i class="far fa-presentation"></i></a>  &nbsp;&nbsp;
+                            <a href="https://huggingface.co/spaces" class="button icon" style="background-color: rgba(255, 255, 255, 0.3)">Demo <i class="fa-light fa-face-smiling-hands"></i></a>
+                        </div>
+                    </div> -->
+
+                    <!-- Using FontAwesome Free -->
+                    <div class="info">
+                        <div>
+                            <a class="button icon" style="background-color: rgba(255, 255, 255, 0.2)">Orcid <i class="fa-brands fa-orcid"></i> &nbsp; 0009-0002-9095-407X</a>  &nbsp;&nbsp;
+                            <a class="button icon" style="background-color: rgba(255, 255, 255, 0.2)" href="https://github.com/bnryx8cfj">Code <i class="fa-solid fa-code"></i></a>  &nbsp;&nbsp;
+                            <a class="button icon" style="background-color: rgba(255, 255, 255, 0.2)">Email <i class="fa-regular fa-envelope"></i> &nbsp; b277-at-umbc-dot-edu</a> &nbsp;&nbsp;
+                            <!--
+                            <a href="https://arxiv.org" class="button icon" style="background-color: rgba(255, 255, 255, 0.2)"> Paper <i class="fa-regular fa-file-lines"></i></a> &nbsp;&nbsp;
+                            <a href="https://www.microsoft.com/en-gb/microsoft-365/powerpoint" class="button icon" style="background-color: rgba(255, 255, 255, 0.2);">Slides <i class="fa-regular fa-file-powerpoint"></i></a> &nbsp;&nbsp;
+                            <a href="https://huggingface.co/spaces/" class="button icon" style="background-color: rgba(255, 255, 255, 0.2)">Demo <i class="fa-brands fa-hugging-face"></i></a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <p><a href="#projects-vcpsa"> Visual CPSA project</a></p>
+                </div>
+            </div>
+
+            <div class="blog-cover">
+                <img class="foreground" src="assets/figures/Photo_2024-05-14_203311-color-adjust.png">
+                <img class="background" src="assets/figures/clarity.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+    <div class="container blog main first" id="blog-main">
+        <h1>
+            Introduction
+        </h1>
+        <p class='text'>
+            I am a PhD student in the Department of Computer Science and Electrical Engineering at the University of Maryland, Baltimore County (UMBC).
+            My research focuses on applying formal methods to verify protocols and programs, especially code generated by artificial intelligence.
+        </p>
+
+        <p class="text">
+        </p>
+    </div>
+
+    <div class="container blog main gray">
+        <img src="clarity/images/vit.png">
+        <p class="caption">
+            Erat id non venenatis nullam leo nisl risus fames. Quis montes tortor aenean posuere non. Maximus dui cras enim tristique; ipsum pellentesque ut. Mauris hac felis elit scelerisque nascetur risus adipiscing ultrices. Quis augue pulvinar laoreet facilisis vel. Pharetra blandit nunc id, sem cubilia sit porttitor. Montes hendrerit vestibulum vulputate tincidunt facilisis metus. Interdum mi vivamus nunc consectetur adipiscing; aptent semper dictum.
+        </p>
+    </div>
+    -->
+
+    <div class="container blog main">
+        <h1>Research</h1>
+        <p class="text">
+            My research focuses on applying formal methods to verify protocols and programs, especially code generated by artificial intelligence.
+        </p>
+
+    <!--
+    </div>
+    <div class="container blog extra-large gray">
+        <div class="slide-menu">
+            <ul class="dots" id="slide-menu">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+
+        <div class="slide-content", style="display: block;">
+            <div class="columns-4">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+            </div>
+            <p class="caption">
+                Nulla quis porttitor varius phasellus dolor curae primis. Suscipit sit adipiscing nibh justo hac. Turpis massa ridiculus sit, finibus quis litora sagittis torquent. Dignissim suscipit quam curabitur sit velit, rhoncus tincidunt purus? At netus efficitur penatibus purus amet urna etiam. Leo neque ligula varius lacinia torquent vehicula. Tempus non mauris vel placerat natoque.
+            </p>
+        </div>
+
+        <div class="slide-content", style="display: none;">
+            <div class="columns-6">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+            </div>
+            <p class="caption">
+                Nulla quis porttitor varius phasellus dolor curae primis. Suscipit sit adipiscing nibh justo hac. Turpis massa ridiculus sit, finibus quis litora sagittis torquent. Dignissim suscipit quam curabitur sit velit, rhoncus tincidunt purus? At netus efficitur penatibus purus amet urna etiam. Leo neque ligula varius lacinia torquent vehicula. Tempus non mauris vel placerat natoque.
+            </p>
+        </div>
+
+        <div class="slide-content", style="display: none;">
+            <div class="columns-8">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+                <img src="https://clickprops.co.uk/wp-content/uploads/2022/05/PP15PS-California-Blue.jpg">
+            </div>
+            <p class="caption">
+                Nulla quis porttitor varius phasellus dolor curae primis. Suscipit sit adipiscing nibh justo hac. Turpis massa ridiculus sit, finibus quis litora sagittis torquent. Dignissim suscipit quam curabitur sit velit, rhoncus tincidunt purus? At netus efficitur penatibus purus amet urna etiam. Leo neque ligula varius lacinia torquent vehicula. Tempus non mauris vel placerat natoque.
+            </p>
+        </div>
+    </div>
+
+    <div class="container blog main">
+        <h1>Additional Analysis</h1>
+    -->
+        <h2>Publications</h2>
+        <div style="margin-left:40">
+            <p class="text">CodeBot 25 Opinion paper </p>
+        </div>
+
+        <h2>Presentations</h2>
+        <p class="text">
+            I have taken parts of my dissertation proposal to the public.
+        </p>
+
+        <div style="margin-left:40">
+            <h3><a id="presentations-avengerconx">Provable Security</a></h3>
+            <p class="text">Presented at AvengerCon X, 1 July 2026.</p>
+            <!--
+            TODO:  Links to AvengerCon, DVIDS
+            -->
+
+            <h3><a id="presentations-mtem2026">MTEM 2026</a></h3>
+            <p class="text">Poster "Provable Security" at MTEM 2026, 17 July 2026</p>
+        </div>
+
+        <h2>Projects</h2>
+        <p class="text">
+            Public projects in active development
+        </p>
+
+        <div style="margin-left:40">
+            <h3><a id="projects-vcpsa" href="https://www.github.com/bnryx8cfj/VisualCPSA">Visual CPSA</a></h3>
+            <p class="text">A Graphical User Interface (GUI) for building models for <a href="https://github.com/mitre/cpsa">MITRE's Cryptographic Protocol Shapes Analyzer (CPSA)</a>.</p>
+            <ul>
+                <li>Demonstrated at <a href="https://hackumbc-2025.devpost.com/">HackUMBC 2025</a></li>
+                <li>Recorded demonstration on<a class="button icon" style="background-color: rgba(255, 255, 255, 0.2)" href="https://www.youtube.com/watch?v=e-pylUW4xLg">
+                    <span style="font-size:medium">YouTube <i class="fa-brands fa-youtube"></i></span></a>
+                </li>
+            </ul>
+                 <br/>
+
+            </p>
+        </div>
+    </div>
+
+    <!--
+    <div class="container blog main">
+        <h1>Conclusion</h1>
+        <p class="text">
+            Per aptent diam; ut in mauris ultricies torquent conubia dolor. Aliquet venenatis sapien, dictum finibus ad dui. Finibus sollicitudin nullam consectetur malesuada molestie semper dolor. Platea eget hac cursus aptent maecenas penatibus vulputate. Ligula libero torquent sit per praesent praesent. Sodales risus mattis enim odio risus tristique. Dapibus vivamus quis scelerisque sollicitudin penatibus placerat erat. Ante aliquet vel; morbi quisque leo morbi. Ac sollicitudin imperdiet lacus integer cursus metus parturient euismod sociosqu.
+        </p>
+    </div>
+
+    <div class="container blog main">
+        <h1>Citation</h1>
+        <p class="text">
+            Dictumst eu himenaeos malesuada nisi eros auctor id suspendisse. Ipsum parturient est vitae proin maecenas. Nulla mollis vivamus cras nam dapibus consectetur. Id efficitur ac ultricies ornare at litora. Vestibulum nibh cursus eu gravida vivamus sem vulputate. Montes nisi ipsum urna vitae semper suscipit.
+        </p>
+<pre><code class="plaintext">@article{doe2048agi,
+    title={Artificial General Intelligence},
+    author={Doe John},
+    journal={nature},
+    year={2048}
+}</code></pre>
+    </div>
+    -->
+
+    <!-- Footer Page -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; William Bardon, Jr., 2026.
+                This website is built on the <a href="https://shikun.io/projects/clarity">Clarity Template</a>, designed by <a href="https://shikun.io/">Shikun Liu</a>.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="clarity/clarity.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    </html>
+</body>
